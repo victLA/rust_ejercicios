@@ -46,6 +46,7 @@ fn main() {
     }
     println!("{:?}", asientos);
 
-    // 3.	Almacenar 300 números aleatorios en un vector, imprimir cuantos son ceros, cuantos son negativos, cuantos positivos.
+    // 3.	Almacenar 300 números aleatorios entre -20 y 20 en un array, imprimir cuantos son ceros, cuantos son negativos, cuantos positivos.
+ 
 
 }
