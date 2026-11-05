@@ -3,7 +3,7 @@ mod utilidades;
 
 use utilidades::*;
 //use utilidades::leer_numero_f32;
-//use utilidades::{leer_numero, area_triangulo};
+//use utilidades::{leer_numero, area_rectangulo};
 
 fn main() {
     //     1.	Pedir por teclado base y altura de un rectángulo y calcular el perímetro y el área.
