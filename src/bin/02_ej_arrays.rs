@@ -34,17 +34,20 @@ fn main() {
             encontrado = true;
         }
     }
-    println!("El número está en el array: {}", encontrado);
+println!("El número está en el array: {}", encontrado) ;
 
     // 2.	Programa para comprar asientos de un autobús de 10 plazas,
     // este marca los asientos ocupados con un “1” y los libres con un “0”.
     // Solicitar al comprador que plaza quiere (del 1 al 10) y si el asiento ya se ha vendido, el programa lo señalará,
     // si no se ha vendido la plaza quedará marcada con un “1” y le deseamos “Feliz viaje”.
+    
     let mut asientos = [0u8; 10];
+
     for mut num in &mut asientos {
         *num = rand::rng().random_range(0..2); // rellenar el array con números aleatorios 0 o 1
     }
     println!("{:?}", asientos);
+    
 
     // 3.	Almacenar 300 números aleatorios entre -20 y 20 en un array, imprimir cuantos son ceros, cuantos son negativos, cuantos positivos.
  
