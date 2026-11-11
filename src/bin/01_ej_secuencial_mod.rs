@@ -1,9 +1,10 @@
-#[path = "../utilidades.rs"]
-mod utilidades;
-
-use utilidades::*;
+//#[path = "../utilidades.rs"]
+//mod utilidades;
+//use utilidades::*;
 //use utilidades::leer_numero_f32;
 //use utilidades::{leer_numero, area_rectangulo};
+
+use rust_ejercicios::utilidades::*;
 
 fn main() {
     //     1.	Pedir por teclado base y altura de un rectángulo y calcular el perímetro y el área.
@@ -20,5 +21,4 @@ fn main() {
 
     println!("Perímetro: {}", perimetro);
     println!("Área: {}", area);
-    
 }
