@@ -35,7 +35,6 @@ fn leer_char() -> char {
     }
 }
 
-
 fn main() {
     // 1. Recibo por teclado 2 números y un operador que podrá ser (+, - , *, /) realizar la operación
     // que corresponda y calcular el resultado.
@@ -64,7 +63,6 @@ fn main() {
         _ => panic!("operador no válido"),
     };
     println!("El resultado con leer_char() es {}", total);
-
     // --------- opción devolver un String y pasar a &str con la función as_str() -> leer_string(msg: &str)
     let operacion = leer_string("Operador (+, -, *, /): ");
     let total = match operacion.as_str() {
