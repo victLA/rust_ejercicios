@@ -11,10 +11,10 @@ fn main() {
     // •	Perímetro=2 * base + 2 * altura
     // •	Área=base * altura
     println!("Base del rectángulo: ");
-    let base = leer_numero_f32();
+    let base = leer_numero_f32("Introducir base");
 
     println!("Altura del rectángulo: ");
-    let altura = leer_numero_f32();
+    let altura = leer_numero_f32("Introducir altura");
 
     let perimetro = 2.0 * base + 2.0 * altura;
     let area = base * altura;
