@@ -27,7 +27,6 @@ pub fn leer_numero_i32(msg: &str) -> i32 {
 }
 
 pub fn leer_numero_f64(msg: &str) -> f64 {
-
     let teclado = leer_string(msg);
     let numero: f64 = match teclado.trim().replace(',', ".").parse() {
         Ok(n) => n,
@@ -36,8 +35,15 @@ pub fn leer_numero_f64(msg: &str) -> f64 {
             return 0.0;
         }
     };
-    // .expect("Número no válido");
     numero
+}
+
+pub fn leer_numero_f64_option(msg: &str) -> Option<f64> {
+    let teclado = leer_string(msg);
+    match teclado.trim().replace(',', ".").parse() {
+        Ok(n) => Some(n),
+        Err(_) => None,
+    }
 }
 
 pub fn leer_string(msg: &str) -> String {
