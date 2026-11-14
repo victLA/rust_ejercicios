@@ -1,4 +1,7 @@
 #[allow(unused_variables, unused)]
+
+
+
 fn main() {
     // 1. Declara una variable llamada edad e inicialízala con el valor 75.
     let edad = 75;

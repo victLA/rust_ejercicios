@@ -1,4 +1,5 @@
 use rust_ejercicios::utilidades::*;
+
 use std::io;
 
 pub fn read_f64(input: &mut String) -> f64 {
@@ -27,6 +28,7 @@ fn consulta_saldo(saldo: f64) -> f64 {
 fn main() {
     let mut saldo = 1000.0;
     loop {
+        //limpiar_pantalla();
         println!("\n--- Opciones cajero ---");
         println!("1. Consultar saldo");
         println!("2. Ingresar");
@@ -64,7 +66,7 @@ fn main() {
             "3" => {
                 let cantidad = leer_numero_f64("¿Cuanto quieres sacar?");
                 if cantidad <= saldo {
-                    saldo -= saldo;
+                    saldo -= cantidad;
                     consulta_saldo(saldo);
                 }else if cantidad <= 0.0 {
                     println!("El valor no pueder negativo o 0");

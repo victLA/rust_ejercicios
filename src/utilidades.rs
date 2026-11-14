@@ -1,5 +1,18 @@
 use std::io::{self, Write};
 use std::str::FromStr;
+use std::process;
+
+
+pub fn limpiar_pantalla() {
+    if cfg!(target_os = "windows") {
+        process::Command::new("cmd")
+            .args(["/c", "cls"])
+            .status()
+            .unwrap();
+    } else {
+        process::Command::new("clear").status().unwrap();
+    }
+}
 
 pub fn leer_numero_f32(msg: &str) -> f32 {
     let teclado = leer_string(msg);
